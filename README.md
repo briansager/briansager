@@ -14,10 +14,6 @@ I build embedded and IoT systems with machine learning on the edge, while growin
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logoColor=white)
-![HDL](https://img.shields.io/badge/HDL-555555?style=for-the-badge&logoColor=white)
-![Assembly](https://img.shields.io/badge/Assembly-6E4C13?style=for-the-badge&logoColor=white)
 
 ### Frameworks and Libraries
 
@@ -56,23 +52,18 @@ I build embedded and IoT systems with machine learning on the edge, while growin
 - **[Portfolio](https://briansager.github.io/)** — My portfolio with projects, awards, and certifications.
 - **[WuWa Build Tracker](https://github.com/briansager/wuwa-build-tracker)** — Echo build scorer with in-browser OCR using React, TypeScript, and Tailwind CSS. [Live demo](https://wuthering-waves-build-tracker.vercel.app/)
 
-## 📊 GitHub Stats
+## 📊 GitHub Stats and Activity
 
 <p align="center">
   <img
     src="./assets/stats.svg"
     alt="Brian James Sager's GitHub statistics"
-    width="100%"
+    width="49%"
   />
-</p>
-
-## 🔥 Activity
-
-<p align="center">
   <img
     src="https://streak-stats.demolab.com/?user=briansager&theme=tokyonight&timezone=Asia%2FManila"
     alt="Brian James Sager's GitHub activity streak"
-    width="100%"
+    width="49%"
   />
 </p>
 
