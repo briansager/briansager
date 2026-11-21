@@ -1,34 +1,84 @@
-name: Update Stats
+name: Update GitHub stats
+
 on:
   schedule:
     - cron: "0 */6 * * *"
+
   workflow_dispatch:
+
   push:
-    branches: [main]
-    paths-ignore: ["assets/**"]
+    branches:
+      - main
+    paths-ignore:
+      - "assets/**"
+
 permissions:
   contents: write
+
+concurrency:
+  group: update-github-stats
+  cancel-in-progress: true
+
 jobs:
   stats:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Generate cards
+
+      - name: Start stats server
         env:
           PAT_1: ${{ secrets.METRICS_TOKEN }}
           PORT: 9000
         run: |
-          git clone --depth 1 https://github.com/anuraghazra/github-readme-stats.git /tmp/grs
-          cd /tmp/grs && npm install
-          node express.js &
-          for i in $(seq 1 30); do curl -s localhost:9000 >/dev/null && break; sleep 1; done
-          cd $GITHUB_WORKSPACE && mkdir -p assets
-          curl -sf "http://localhost:9000/api?username=briansager&show_icons=true&theme=radical&count_private=true" -o assets/stats.svg
-          curl -sf "http://localhost:9000/api/top-langs/?username=briansager&layout=compact&theme=radical" -o assets/top-langs.svg
-      - uses: stefanzweifel/git-auto-commit-action@v5
+          git clone --depth 1 https://github.com/anuraghazra/github-readme-stats.git /tmp/github-readme-stats
+
+          cd /tmp/github-readme-stats
+
+          npm ci
+
+          nohup node express.js > /tmp/github-readme-stats.log 2>&1 &
+
+      - name: Wait for stats server
+        run: |
+          for attempt in {1..60}; do
+            if curl --fail --silent --show-error \
+              "http://localhost:9000/api?username=briansager" > /dev/null; then
+              exit 0
+            fi
+
+            sleep 1
+          done
+
+          echo "Stats server did not start."
+          echo "Server log:"
+          cat /tmp/github-readme-stats.log
+
+          exit 1
+
+      - name: Generate statistics cards
+        run: |
+          mkdir -p assets
+
+          curl --fail --silent --show-error --retry 3 \
+            "http://localhost:9000/api?username=briansager&show_icons=true&theme=radical&count_private=true" \
+            --output assets/stats.svg
+
+          curl --fail --silent --show-error --retry 3 \
+            "http://localhost:9000/api/top-langs/?username=briansager&layout=compact&theme=radical" \
+            --output assets/top-langs.svg
+
+          test -s assets/stats.svg
+          test -s assets/top-langs.svg
+
+      - name: Commit updated cards
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update stats cards"
-          file_pattern: assets/*.svg
+          commit_message: "chore: update GitHub stats cards"
+          file_pattern: "assets/*.svg"
