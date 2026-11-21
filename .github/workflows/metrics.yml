@@ -1,26 +1,34 @@
-name: Metrics
+name: Update Stats
 on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches: [main]
+    paths-ignore: ["assets/**"]
+permissions:
+  contents: write
 jobs:
-  metrics:
+  stats:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: briansager
-          template: classic
-          base: header, activity, repositories
-          config_timezone: Asia/Manila
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_limit: 6
-          filename: github-metrics.svg
-          committer_branch: main
-          committer_message: "chore: update metrics"
+          node-version: 20
+      - name: Generate cards
+        env:
+          PAT_1: ${{ secrets.METRICS_TOKEN }}
+          PORT: 9000
+        run: |
+          git clone --depth 1 https://github.com/anuraghazra/github-readme-stats.git /tmp/grs
+          cd /tmp/grs && npm install
+          node express.js &
+          for i in $(seq 1 30); do curl -s localhost:9000 >/dev/null && break; sleep 1; done
+          cd $GITHUB_WORKSPACE && mkdir -p assets
+          curl -sf "http://localhost:9000/api?username=briansager&show_icons=true&theme=radical&count_private=true" -o assets/stats.svg
+          curl -sf "http://localhost:9000/api/top-langs/?username=briansager&layout=compact&theme=radical" -o assets/top-langs.svg
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update stats cards"
+          file_pattern: assets/*.svg
