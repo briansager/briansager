@@ -59,11 +59,13 @@ I build embedded and IoT systems with machine learning on the edge, while growin
     src="./assets/stats.svg"
     alt="Brian James Sager's GitHub statistics"
     width="49%"
+    height="205"
   />
   <img
-    src="https://streak-stats.demolab.com/?user=briansager&theme=tokyonight&timezone=Asia%2FManila"
+    src="https://streak-stats.demolab.com/?user=briansager&theme=tokyonight&timezone=Asia%2FManila&card_width=495&card_height=205"
     alt="Brian James Sager's GitHub activity streak"
     width="49%"
+    height="205"
   />
 </p>
 
