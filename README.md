@@ -58,7 +58,6 @@ I build embedded and IoT systems with machine learning on the edge, and I am gro
 ## 📊 GitHub Stats
 
 ![Stats](./assets/stats.svg)
-![Top Langs](./assets/top-langs.svg)
 
 ## 🔥 Activity
 
