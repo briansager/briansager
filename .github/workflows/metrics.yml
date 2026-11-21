@@ -15,6 +15,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-github-stats
+  cancel-in-progress: true
+
 jobs:
   update-stats:
     runs-on: ubuntu-latest
@@ -63,28 +67,22 @@ jobs:
           done
 
           echo "Stats server failed to start."
+          echo "Server log:"
           cat /tmp/stats-server.log
           exit 1
 
-      - name: Generate stats cards
-        env:
-          STATS_URL: http://localhost:9000
+      - name: Generate GitHub stats card
         run: |
           mkdir -p assets
 
           curl --fail --silent --show-error --retry 3 \
-            "$STATS_URL/api?username=briansager&show_icons=true&theme=radical&count_private=true" \
+            "http://localhost:9000/api?username=briansager&show_icons=true&theme=tokyonight&count_private=true" \
             -o assets/stats.svg
 
-          curl --fail --silent --show-error --retry 3 \
-            "$STATS_URL/api/top-langs/?username=briansager&layout=compact&theme=radical" \
-            -o assets/top-langs.svg
-
           test -s assets/stats.svg
-          test -s assets/top-langs.svg
 
-      - name: Commit updated cards
+      - name: Commit updated stats card
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update GitHub stats"
-          file_pattern: "assets/*.svg"
+          file_pattern: "assets/stats.svg"
