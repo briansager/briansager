@@ -57,12 +57,7 @@ I build embedded and IoT systems with machine learning on the edge, and I am gro
 
 ## 📊 GitHub Stats
 
-![Stats](https://github-readme-stats.vercel.app/api?username=briansager&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=briansager&layout=compact&theme=radical)
-
-## 🔥 Activity
-
-![Streak](https://streak-stats.demolab.com/?user=briansager&theme=radical)
+![GitHub Metrics](./github-metrics.svg)
 
 ## 📫 Contact
 
