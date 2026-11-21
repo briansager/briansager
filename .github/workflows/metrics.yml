@@ -16,14 +16,11 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: briansager
           template: classic
-          base: header, activity, community, repositories
+          base: header, activity, repositories
           config_timezone: Asia/Manila
           plugin_languages: yes
           plugin_languages_sections: most-used
-          plugin_streak: yes
-          plugin_streak_days: 365
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_languages_limit: 6
           filename: github-metrics.svg
           committer_branch: main
           committer_message: "chore: update metrics"
