@@ -58,13 +58,23 @@ I build embedded and IoT systems with machine learning on the edge, while growin
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](./assets/stats.svg)
-
-![Top Languages](./assets/top-langs.svg)
+<p align="center">
+  <img
+    src="./assets/stats.svg"
+    alt="Brian James Sager's GitHub statistics"
+    width="100%"
+  />
+</p>
 
 ## 🔥 Activity
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=briansager&theme=radical)
+<p align="center">
+  <img
+    src="https://streak-stats.demolab.com/?user=briansager&theme=tokyonight&timezone=Asia%2FManila"
+    alt="Brian James Sager's GitHub activity streak"
+    width="100%"
+  />
+</p>
 
 ## 📫 Contact
 
