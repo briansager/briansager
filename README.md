@@ -50,6 +50,7 @@ I build embedded and IoT systems with machine learning on the edge, while growin
 ## 📌 Featured Projects
 
 - **[Portfolio](https://briansager.github.io/)** — My portfolio with projects, awards, and certifications.
+- **[ChorusGlyph](https://github.com/briansager/ChorusGlyph)** — Multilingual sing-along lyrics app with synchronized lyrics and romanized readings for Japanese, Korean, Chinese, and other scripts. Built with React, TypeScript, Vite, IndexedDB, Cloudflare Workers, and Azure Transliterate.
 - **[WuWa Build Tracker](https://github.com/briansager/wuwa-build-tracker)** — Echo build scorer with in-browser OCR using React, TypeScript, and Tailwind CSS. [Live demo](https://wuthering-waves-build-tracker.vercel.app/)
 
 ## 📊 GitHub Stats and Activity
