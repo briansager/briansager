@@ -1,8 +1,20 @@
 # Hi, I'm Brian James Sager 👋
 
-4th-year Computer Engineering student at FEU Institute of Technology, Philippines.
+4th-year Computer Engineering student at FEU Institute of Technology, Philippines (expected graduation: September 2027).
 
-I build embedded and IoT systems with machine learning on the edge, while growing my skills in cybersecurity and networking.
+I build embedded and IoT systems with machine learning on the edge, deploy computer vision on small devices, and build software tools, while growing my skills in cybersecurity and networking. Currently seeking internship opportunities.
+
+## 📌 Featured Projects
+
+| Project | What it does | Stack | Links |
+| :-- | :-- | :-- | :-- |
+| **VERDE**<br>Vegetation Environment Real-time Detection Engine<br>*Thesis · 2026–27* | Hydroponics monitoring system that fuses water-quality sensors with computer vision to assess plant and nutrient conditions, then delivers confidence-scored recommendations and alerts.<br><br>• YOLOv8 at **96.67% mAP@0.5** on 2,200 images<br>• Random Forest on ~5,000 sensor readings (100% 5-fold CV)<br>• 4.9 s max response time, 20/20 verified combinations | YOLOv8, Random Forest, Raspberry Pi 5, ADS1115, relay-controlled pumps, Python | [Portfolio](https://briansager.github.io/) |
+| **ChorusGlyph**<br>Multilingual Lyric Workspace | Web app for following synchronized lyrics with romanized readings for Japanese, Chinese, Korean, and Thai. Supports manual entry, local LRC files, and LRCLIB search, plus an optional Chrome/Edge extension that syncs lyrics with YouTube playback. Includes timing offsets, editable readings, and local caching. | React, TypeScript, Vite, IndexedDB, Chrome Extension (MV3), Vercel | [Source](https://github.com/briansager/ChorusGlyph) |
+| **Solaris Nexus**<br>Wuthering Waves Echo Build Scorer | Open-source web app that scores five-Echo builds with character-specific stat weights, detects Sonata set bonuses, and grades builds from S to D. In-browser OCR reads screenshots on-device with no server upload. | React, TypeScript, Vite, Tailwind CSS, Tesseract.js, Vercel | [Live demo](https://wuthering-waves-build-tracker.vercel.app/) · [Source](https://github.com/briansager/SolarisNexus) |
+| **Index 0 Student Services Map** | Web-based student services map. I co-developed it, organized the SQL tables, planned features through a system flowchart, ran manual QA, and delivered the full demo. | React, Flask, PostgreSQL, Leaflet, Git | [Portfolio](https://briansager.github.io/) |
+| **Closed-Loop Water Quality Control for RO Units** | Arduino system that monitors pH and TDS and automatically runs RO or alkaline filtration until water is within safe limits. I built and soldered the hardware and reviewed the code against the project's 7 objectives. | Arduino Uno, C++, pH/TDS sensors, I2C LCD, relays | [Portfolio](https://briansager.github.io/) |
+
+See the full write-ups and photos on my [portfolio](https://briansager.github.io/).
 
 ## 🛠 Tech Stack
 
@@ -14,6 +26,8 @@ I build embedded and IoT systems with machine learning on the edge, while growin
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![HDL](https://img.shields.io/badge/HDL-5C6BC0?style=for-the-badge&logoColor=white)
+![Assembly](https://img.shields.io/badge/Assembly-6E4C1E?style=for-the-badge&logoColor=white)
 
 ### Frameworks and Libraries
 
@@ -47,12 +61,6 @@ I build embedded and IoT systems with machine learning on the edge, while growin
 ![AutoCAD](https://img.shields.io/badge/AutoCAD-E51050?style=for-the-badge&logo=autodesk&logoColor=white)
 ![Quartus](https://img.shields.io/badge/Quartus-0071C5?style=for-the-badge&logo=intel&logoColor=white)
 
-## 📌 Featured Projects
-
-- **[Portfolio](https://briansager.github.io/)** — My portfolio with projects, awards, and certifications.
-- **[ChorusGlyph](https://github.com/briansager/ChorusGlyph)** — Multilingual sing-along lyrics app with synchronized lyrics and romanized readings for Japanese, Korean, Chinese, and other scripts. Built with React, TypeScript, Vite, IndexedDB, Cloudflare Workers, and Azure Transliterate.
-- **[Solaris Nexus](https://github.com/briansager/wuwa-build-tracker)** — Echo build scorer for a game, with in-browser OCR, built with React, TypeScript, and Tailwind CSS. [Live demo](https://wuthering-waves-build-tracker.vercel.app/)
-
 ## 📊 GitHub Stats and Activity
 
 <p align="center">
@@ -74,4 +82,5 @@ I build embedded and IoT systems with machine learning on the edge, while growin
 
 - Portfolio: [briansager.github.io](https://briansager.github.io)
 - LinkedIn: [linkedin.com/in/brianjamessager](https://www.linkedin.com/in/brianjamessager/)
+- Credly: [credly.com/users/brian-james-sager](https://www.credly.com/users/brian-james-sager)
 - Email: [brianjames.sager@gmail.com](mailto:brianjames.sager@gmail.com)
