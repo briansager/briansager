@@ -1,5 +1,12 @@
 # Hi, I'm Brian James Sager 👋
 
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=500&size=22&duration=3000&pause=1200&color=E8D57A&center=true&vCenter=true&width=600&height=45&lines=Embedded+Systems;Edge+AI+%26+Computer+Vision;IoT+Prototypes;Software+Development"
+    alt="Typing animation: Embedded Systems, Edge AI and Computer Vision, IoT Prototypes, Software Development"
+  />
+</p>
+
 4th-year Computer Engineering student at FEU Institute of Technology, Philippines (expected graduation: September 2027).
 
 I build embedded and IoT systems with machine learning on the edge, deploy computer vision on small devices, and build software tools, while growing my skills in cybersecurity and networking. Currently seeking internship opportunities.
@@ -65,18 +72,27 @@ See the full write-ups and photos on my [portfolio](https://briansager.github.io
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=briansager&layout=compact&langs_count=8&card_width=495&hide_title=false&title_color=E8D57A&text_color=F4F1E8&bg_color=080909&border_color=343128"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=briansager&layout=donut&langs_count=5&card_width=495&hide_title=false&title_color=E8D57A&text_color=F4F1E8&bg_color=080909&border_color=343128"
     alt="Brian James Sager's top languages"
     width="49%"
-    height="205"
   />
   <img
-    src="https://streak-stats.demolab.com/?user=briansager&background=080909&border=343128&stroke=343128&ring=E8D57A&fire=E8D57A&currStreakNum=F4F1E8&sideNums=F4F1E8&currStreakLabel=E8D57A&sideLabels=AAA69A&dates=AAA69A&timezone=Asia%2FManila&card_width=495&card_height=205"
+    src="https://streak-stats.demolab.com/?user=briansager&background=080909&border=343128&stroke=343128&ring=E8D57A&fire=E8D57A&currStreakNum=F4F1E8&sideNums=F4F1E8&currStreakLabel=E8D57A&sideLabels=AAA69A&dates=AAA69A&timezone=Asia%2FManila&card_width=495&card_height=215"
     alt="Brian James Sager's GitHub activity streak"
     width="49%"
-    height="205"
   />
 </p>
+
+<!-- WakaTime coding time by language: uncomment after creating a WakaTime account,
+     installing the editor plugin, and making your profile public.
+     Replace YOUR_WAKATIME_USERNAME below.
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USERNAME&layout=compact&card_width=495&title_color=E8D57A&text_color=F4F1E8&bg_color=080909&border_color=343128"
+    alt="Brian James Sager's WakaTime coding activity"
+  />
+</p>
+-->
 
 ## 📫 Contact
 
