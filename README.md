@@ -70,18 +70,16 @@ See the full write-ups and photos on my [portfolio](https://briansager.github.io
 
 ## 📊 Languages and Activity
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=briansager&layout=donut&langs_count=5&card_width=495&hide_title=false&title_color=E8D57A&text_color=F4F1E8&bg_color=080909&border_color=343128"
-    alt="Brian James Sager's top languages"
-    width="49%"
-  />
-  <img
-    src="https://streak-stats.demolab.com/?user=briansager&background=080909&border=343128&stroke=343128&ring=E8D57A&fire=E8D57A&currStreakNum=F4F1E8&sideNums=F4F1E8&currStreakLabel=E8D57A&sideLabels=AAA69A&dates=AAA69A&timezone=Asia%2FManila&card_width=495&card_height=215"
-    alt="Brian James Sager's GitHub activity streak"
-    width="49%"
-  />
-</p>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="./assets/top-langs.svg" alt="Brian James Sager's most used languages" width="100%" />
+    </td>
+    <td width="50%" valign="top">
+      <img src="https://streak-stats.demolab.com/?user=briansager&background=080909&border=343128&stroke=343128&ring=E8D57A&fire=E8D57A&currStreakNum=F4F1E8&sideNums=F4F1E8&currStreakLabel=E8D57A&sideLabels=AAA69A&dates=AAA69A&timezone=Asia%2FManila&card_width=495&card_height=190" alt="Brian James Sager's GitHub activity streak" width="100%" />
+    </td>
+  </tr>
+</table>
 
 <!-- WakaTime coding time by language: uncomment after creating a WakaTime account,
      installing the editor plugin, and making your profile public.
