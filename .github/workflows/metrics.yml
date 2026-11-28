@@ -71,18 +71,18 @@ jobs:
           cat /tmp/stats-server.log
           exit 1
 
-      - name: Generate GitHub stats card
+      - name: Generate top languages card
         run: |
           mkdir -p assets
 
           curl --fail --silent --show-error --retry 3 \
-            "http://localhost:9000/api?username=briansager&show_icons=true&theme=tokyonight&count_private=true" \
-            -o assets/stats.svg
+            "http://localhost:9000/api/top-langs?username=briansager&layout=compact&langs_count=8&card_width=495&title_color=E8D57A&text_color=F4F1E8&bg_color=080909&border_color=343128" \
+            -o assets/top-langs.svg
 
-          test -s assets/stats.svg
+          test -s assets/top-langs.svg
 
-      - name: Commit updated stats card
+      - name: Commit updated languages card
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update GitHub stats"
-          file_pattern: "assets/stats.svg"
+          commit_message: "chore: update top languages card"
+          file_pattern: "assets/top-langs.svg"
