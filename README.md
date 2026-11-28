@@ -61,12 +61,12 @@ See the full write-ups and photos on my [portfolio](https://briansager.github.io
 ![AutoCAD](https://img.shields.io/badge/AutoCAD-E51050?style=for-the-badge&logo=autodesk&logoColor=white)
 ![Quartus](https://img.shields.io/badge/Quartus-0071C5?style=for-the-badge&logo=intel&logoColor=white)
 
-## 📊 GitHub Stats and Activity
+## 📊 Languages and Activity
 
 <p align="center">
   <img
-    src="./assets/stats.svg"
-    alt="Brian James Sager's GitHub statistics"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=briansager&layout=compact&langs_count=8&card_width=495&hide_title=false&title_color=E8D57A&text_color=F4F1E8&bg_color=080909&border_color=343128"
+    alt="Brian James Sager's top languages"
     width="49%"
     height="205"
   />
