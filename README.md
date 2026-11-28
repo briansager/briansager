@@ -8,11 +8,11 @@ I build embedded and IoT systems with machine learning on the edge, deploy compu
 
 | Project | What it does | Stack | Links |
 | :-- | :-- | :-- | :-- |
-| **VERDE**<br>Vegetation Environment Real-time Detection Engine<br>*Thesis · 2026–27* | Hydroponics monitoring system that fuses water-quality sensors with computer vision to assess plant and nutrient conditions, then delivers confidence-scored recommendations and alerts.<br><br>• YOLOv8 at **96.67% mAP@0.5** on 2,200 images<br>• Random Forest on ~5,000 sensor readings (100% 5-fold CV)<br>• 4.9 s max response time, 20/20 verified combinations | YOLOv8, Random Forest, Raspberry Pi 5, ADS1115, relay-controlled pumps, Python | [Portfolio](https://briansager.github.io/) |
-| **ChorusGlyph**<br>Multilingual Lyric Workspace | Web app for following synchronized lyrics with romanized readings for Japanese, Chinese, Korean, and Thai. Supports manual entry, local LRC files, and LRCLIB search, plus an optional Chrome/Edge extension that syncs lyrics with YouTube playback. Includes timing offsets, editable readings, and local caching. | React, TypeScript, Vite, IndexedDB, Chrome Extension (MV3), Vercel | [Source](https://github.com/briansager/ChorusGlyph) |
-| **Solaris Nexus**<br>Wuthering Waves Echo Build Scorer | Open-source web app that scores five-Echo builds with character-specific stat weights, detects Sonata set bonuses, and grades builds from S to D. In-browser OCR reads screenshots on-device with no server upload. | React, TypeScript, Vite, Tailwind CSS, Tesseract.js, Vercel | [Live demo](https://wuthering-waves-build-tracker.vercel.app/) · [Source](https://github.com/briansager/SolarisNexus) |
-| **Index 0 Student Services Map** | Web-based student services map. I co-developed it, organized the SQL tables, planned features through a system flowchart, ran manual QA, and delivered the full demo. | React, Flask, PostgreSQL, Leaflet, Git | [Portfolio](https://briansager.github.io/) |
-| **Closed-Loop Water Quality Control for RO Units** | Arduino system that monitors pH and TDS and automatically runs RO or alkaline filtration until water is within safe limits. I built and soldered the hardware and reviewed the code against the project's 7 objectives. | Arduino Uno, C++, pH/TDS sensors, I2C LCD, relays | [Portfolio](https://briansager.github.io/) |
+| **VERDE** | Hydroponics monitoring system that fuses water-quality sensors with computer vision to assess plant and nutrient conditions, then delivers confidence-scored recommendations and alerts.<br><br>• YOLOv8 at 96.67% mAP@0.5 on 2,200 images<br>• Random Forest on ~5,000 sensor readings (100% 5-fold CV)<br>• 4.9 s max response time, 20/20 verified combinations | YOLOv8, Random Forest, Raspberry Pi 5, ADS1115, relay-controlled pumps, Python | [Portfolio](https://briansager.github.io/) |
+| **ChorusGlyph** | Web app for following synchronized lyrics with romanized readings for Japanese, Chinese, Korean, and Thai. Supports manual entry, local LRC files, and LRCLIB search, plus an optional Chrome/Edge extension that syncs lyrics with YouTube playback. Includes timing offsets, editable readings, and local caching. | React, TypeScript, Vite, IndexedDB, Chrome Extension (MV3), Vercel | [Source](https://github.com/briansager/ChorusGlyph) |
+| **Solaris Nexus** | Open-source web app that scores five-Echo builds with character-specific stat weights, detects Sonata set bonuses, and grades builds from S to D. In-browser OCR reads screenshots on-device with no server upload. | React, TypeScript, Vite, Tailwind CSS, Tesseract.js, Vercel | [Live demo](https://wuthering-waves-build-tracker.vercel.app/) · [Source](https://github.com/briansager/SolarisNexus) |
+| **Index 0** | Web-based student services map. I co-developed it, organized the SQL tables, planned features through a system flowchart, ran manual QA, and delivered the full demo. | React, Flask, PostgreSQL, Leaflet, Git | [Portfolio](https://briansager.github.io/) |
+| **Closed-Loop Water Quality Control System** | Arduino system that monitors pH and TDS and automatically runs RO or alkaline filtration until water is within safe limits. I built and soldered the hardware and reviewed the code against the project's 7 objectives. | Arduino Uno, C++, pH/TDS sensors, I2C LCD, relays | [Portfolio](https://briansager.github.io/) |
 
 See the full write-ups and photos on my [portfolio](https://briansager.github.io/).
 
@@ -71,7 +71,7 @@ See the full write-ups and photos on my [portfolio](https://briansager.github.io
     height="205"
   />
   <img
-    src="https://streak-stats.demolab.com/?user=briansager&theme=tokyonight&timezone=Asia%2FManila&card_width=495&card_height=205"
+    src="https://streak-stats.demolab.com/?user=briansager&background=080909&border=343128&stroke=343128&ring=E8D57A&fire=E8D57A&currStreakNum=F4F1E8&sideNums=F4F1E8&currStreakLabel=E8D57A&sideLabels=AAA69A&dates=AAA69A&timezone=Asia%2FManila&card_width=495&card_height=205"
     alt="Brian James Sager's GitHub activity streak"
     width="49%"
     height="205"
